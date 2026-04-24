@@ -6,10 +6,11 @@
 
 <style>
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
   background: #f5f5f5;
   padding: 20px;
+  margin: 0;
 }
 
 h1 { color: #111; }
@@ -28,15 +29,24 @@ h1 { color: #111; }
 }
 
 input {
-  padding: 10px;
+  padding: 12px;
   margin: 10px;
   width: 80%;
   max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
 }
 </style>
 </head>
 
 <body>
+
+<div class="container">
 
 <h2>Real entrepreneur. Real build. No gurus.</h2>
 
@@ -49,17 +59,30 @@ input {
 
 <div class="section">
 <h2>Get Paid While Learning the Market</h2>
+
 <p>I use DoorDash to make money AND study what people are buying before starting a business.</p>
+
+<ul style="list-style:none; padding:0;">
+<li>✔ Learn what sells</li>
+<li>✔ Find hot locations</li>
+<li>✔ Spot business opportunities</li>
+<li>✔ Get paid while doing it</li>
+</ul>
 
 <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start With This Method</a>
 </div>
 
 <div class="section" id="blueprint">
 <h2>Get My Free Blueprint</h2>
-<p>Learn how to start making money immediately and avoid beginner mistakes.</p>
 
-<form>
-<input type="email" placeholder="Enter your email">
+<p>Learn how to:
+<br>✔ Start making money immediately  
+<br>✔ Avoid beginner mistakes  
+<br>✔ Build income while planning your business  
+</p>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="email" name="email" placeholder="Enter your email" required>
 <br>
 <button class="btn" type="submit">Get Access</button>
 </form>
@@ -68,6 +91,7 @@ input {
 
 <div class="section">
 <h2>Tools I Use</h2>
+
 <p>Simple tools to start and grow.</p>
 
 <a class="btn" href="https://www.zenbusiness.com/" target="_blank">Start Your Business</a>
@@ -79,12 +103,15 @@ input {
 
 <div class="section">
 <h2>Watch Me Build In Real Time</h2>
+
 <p>I show what works, what doesn’t, and how I’m building income from scratch.</p>
 </div>
 
-<p style="font-size:12px;">
+<p style="font-size:12px; margin-top:40px;">
 Some links may be affiliate links. I may earn a commission at no extra cost to you.
 </p>
+
+</div>
 
 </body>
 </html>
