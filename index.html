@@ -1,201 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Levels of Flavor — There’s Levels To This</title>
-
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0b0b0b;
-  color:#fff;
+.package {
+  background:#151515;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  max-width:400px;
 }
 
-header {
-  background:#000;
+.price-btn {
+  width:100%;
   padding:15px;
-  text-align:center;
-}
-
-h1 { color:#facc15; margin:5px; }
-h2 { margin:10px 0; }
-
-.nav {
-  position:relative;
-  display:inline-block;
-}
-
-.nav button {
+  font-size:18px;
+  font-weight:bold;
   background:#facc15;
   color:#000;
-  padding:10px 15px;
   border:none;
-  font-weight:bold;
+  border-radius:8px;
   cursor:pointer;
 }
 
-.dropdown {
+.details {
   display:none;
-  position:absolute;
-  background:#111;
-  min-width:200px;
-  border:1px solid #333;
+  margin-top:15px;
+  text-align:left;
+  font-size:14px;
+  color:#ddd;
 }
 
-.dropdown a {
-  display:block;
-  padding:10px;
-  color:#fff;
-  text-decoration:none;
-}
-
-.dropdown a:hover {
-  background:#222;
-}
-
-.nav:hover .dropdown {
-  display:block;
-}
-
-.hero {
-  text-align:center;
-  padding:60px 20px;
-}
-
-.section {
-  padding:50px 20px;
-  text-align:center;
-}
-
-.btn {
-  display:inline-block;
-  padding:15px 25px;
-  margin:15px;
-  font-weight:bold;
-  border-radius:8px;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.btn-primary {
-  background:#facc15;
-  color:#000;
-}
-
-.btn-dark {
-  background:#000;
-  color:#fff;
-  border:2px solid #facc15;
-}
-
-.btn:hover {
-  transform:scale(1.05);
-}
-
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card {
-  background:#151515;
-  padding:20px;
-  border-radius:10px;
-}
-
-footer {
-  text-align:center;
-  padding:20px;
-  background:#000;
+.details ul {
+  padding-left:20px;
 }
 </style>
-</head>
 
-<body>
-
-<header>
-<h1>Levels of Flavor</h1>
-<h2>THERE’S LEVELS TO THIS!</h2>
-
-<div class="nav">
-<button>Start Here ▼</button>
-<div class="dropdown">
-<a href="#step1">Make Money Now</a>
-<a href="#step2">Start Business</a>
-<a href="#step3">Structure</a>
-<a href="#step4">We Build It</a>
-</div>
-</div>
-
-</header>
-
-<section class="hero">
-<h2>Build Income. Build Structure. Build Real Business.</h2>
-<p>Stop guessing. Follow the levels.</p>
-
-<a class="btn btn-primary" href="#step1">
-START LEVEL 1
-</a>
-</section>
-
-<section class="section" id="step1">
-<h2>Level 1 — Make Money Now</h2>
-<p>Start generating income immediately.</p>
-
-<a class="btn btn-primary" href="#">
-Get DoorDash Cheat Codes — $9.99
-</a>
-</section>
-
-<section class="section" id="step2">
-<h2>Level 2 — Start Your Business</h2>
-
-<div class="cards">
-<div class="card">
-<h3>Low Budget</h3>
-<p>Start with what you have.</p>
-<a class="btn btn-dark" href="#">Get Starter Guide — $29</a>
-</div>
-
-<div class="card">
-<h3>Moderate Budget</h3>
-<p>Build with structure.</p>
-<a class="btn btn-dark" href="#">Get Full Startup Pack — $49</a>
-</div>
-
-<div class="card">
-<h3>Ready To Go</h3>
-<p>Move faster with full system.</p>
-<a class="btn btn-dark" href="#">Get Complete Bundle — $99</a>
-</div>
-</div>
-
-</section>
-
-<section class="section" id="step3">
-<h2>Level 3 — Structure & Protect</h2>
-<p>Set your business up the right way.</p>
-
-<a class="btn btn-primary" href="#">
-Get Structure Blueprint — $49
-</a>
-</section>
-
-<section class="section" id="step4">
-<h2>Level 4 — We Build It For You</h2>
-<p>Skip the guesswork. We help you launch.</p>
-
-<a class="btn btn-primary" href="#">
-Start Done-For-You Setup
-</a>
-</section>
-
-<footer>
-Some links may be affiliate links. We may earn commissions.
-</footer>
-
-</body>
-</html>
+<script>
+function toggleDetails(id) {
+  var x = document.getElementById(id);
+  x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+</script>
