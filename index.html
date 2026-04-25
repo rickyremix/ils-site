@@ -3,202 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Levels of Flavor</title>
+<title>THERE’S LEVELS TO THIS!</title>
 
 <style>
 * { box-sizing: border-box; }
 
 body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0b0b0b;
-  color:#fff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
 }
 
-/* HEADER */
 header {
-  background:#000;
-  padding:40px 20px 20px;
-  text-align:center;
-  border-bottom:1px solid #222;
+  background: #000;
+  padding: 50px 20px 35px;
+  text-align: center;
+  border-bottom: 1px solid #222;
 }
 
-.brand {
-  font-size:62px;
-  font-weight:900;
-  color:#facc15;
+.main-title {
+  font-size: 64px;
+  font-weight: 900;
+  color: #facc15;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
-.slogan {
-  margin-top:12px;
-  font-size:18px;
-  letter-spacing:3px;
+.sub-brand {
+  margin-top: 22px;
+  font-size: 18px;
+  color: #ddd;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
-/* NAV */
 .nav-buttons {
-  margin-top:18px;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .nav-buttons a {
-  background:#111;
-  color:#fff;
-  padding:10px 16px;
-  text-decoration:none;
-  font-weight:900;
-  border-radius:6px;
-  border:1px solid #333;
-  font-size:14px;
+  background: #111;
+  color: #fff;
+  padding: 13px 18px;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-size: 16px;
 }
 
 .nav-buttons a:hover {
-  background:#facc15;
-  color:#000;
+  background: #facc15;
+  color: #000;
 }
 
-/* CONTAINER */
 .container {
-  max-width:1000px;
-  margin:auto;
-  padding:0 20px;
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 30px;
 }
 
-/* HERO */
 .hero {
-  padding:40px 0 30px;
-  text-align:center;
+  padding: 60px 0 45px;
+  text-align: center;
+  background: linear-gradient(135deg, #000, #2a1f00);
 }
 
 .hero h2 {
-  font-size:36px;
-  font-weight:900;
-  margin-bottom:8px;
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0 0 15px;
 }
 
 .hero p {
-  margin:8px auto 18px;
-  max-width:550px;
-  color:#ccc;
-  font-size:15px;
+  max-width: 760px;
+  margin: 0 auto 25px;
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* HERO BUTTONS */
-.hero-actions {
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.hero-actions a {
-  background:#facc15;
-  color:#000;
-  padding:12px 18px;
-  text-decoration:none;
-  font-weight:900;
-  border-radius:6px;
-  min-width:160px;
-  text-align:center;
-}
-
-.hero-actions a:nth-child(2) {
-  background:transparent;
-  border:2px solid #facc15;
-  color:#facc15;
-}
-
-/* SECTION */
 .section {
-  padding:40px 0;
+  padding: 65px 0;
 }
 
 .section h2 {
-  font-size:42px; /* BIG FIX */
-  text-align:center;
-  color:#facc15;
-  margin-bottom:18px;
-  font-weight:900;
+  font-size: 42px;
+  text-align: center;
+  color: #facc15;
+  margin: 0 0 18px;
+  font-weight: 900;
 }
 
-/* CARDS */
+.section-intro {
+  max-width: 820px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 .cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 22px;
 }
 
 .card {
-  background:#151515;
-  padding:18px;
-  border-radius:8px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-
-/* MENU CARD EMPHASIS */
-.card:first-child {
-  border:2px solid #facc15;
+  background: #151515;
+  border: 1px solid #333;
+  padding: 24px;
+  border-radius: 14px;
 }
 
 .card h3 {
-  font-size:18px;
-  color:#facc15;
+  color: #facc15;
+  font-size: 23px;
+  margin: 0 0 10px;
+}
+
+.card p {
+  color: #d4d4d4;
+  line-height: 1.5;
 }
 
 .price {
-  font-size:22px;
-  font-weight:900;
-  margin:6px 0;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 12px 0;
 }
 
-/* BUTTON */
 .btn {
-  display:block;
-  width:100%;
-  padding:12px;
-  margin-top:10px;
-  background:#facc15;
-  color:#000;
-  text-align:center;
-  border-radius:6px;
-  font-weight:900;
-  text-decoration:none;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 14px;
+  background: #facc15;
+  color: #000;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* DETAILS */
+.btn-dark {
+  background: transparent;
+  color: #facc15;
+  border: 2px solid #facc15;
+}
+
 details {
-  margin-top:8px;
-  background:#0e0e0e;
-  padding:6px;
-  border-radius:6px;
+  margin-top: 12px;
+  background: #0e0e0e;
+  border: 1px solid #333;
+  padding: 14px;
+  border-radius: 10px;
 }
 
 summary {
-  cursor:pointer;
-  font-weight:900;
-  color:#facc15;
-  font-size:13px;
+  cursor: pointer;
+  color: #facc15;
+  font-weight: 900;
+  font-size: 16px;
 }
 
 details ul {
-  margin-top:6px;
-  padding-left:16px;
-  font-size:12px;
+  margin-top: 12px;
+  padding-left: 20px;
+  color: #e5e5e5;
+  line-height: 1.5;
 }
 
-/* FOOTER */
+.accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion details {
+  margin-bottom: 18px;
+}
+
+.accordion summary {
+  font-size: 22px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.service-box {
+  background: #151515;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.service-box h4 {
+  color: #facc15;
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+.highlight {
+  background: #facc15;
+  color: #000;
+}
+
+.highlight h2,
+.highlight .section-intro {
+  color: #000;
+}
+
+input {
+  padding: 14px;
+  width: 90%;
+  max-width: 380px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  font-size: 15px;
+}
+
 footer {
-  padding:20px;
-  text-align:center;
-  background:#000;
-  border-top:1px solid #222;
-  font-size:12px;
-  color:#777;
+  background: #000;
+  border-top: 1px solid #222;
+  padding: 35px 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+@media (max-width: 650px) {
+  .main-title {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+
+  .nav-buttons a {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 </style>
 </head>
@@ -206,72 +275,428 @@ footer {
 <body>
 
 <header>
-<h1 class="brand">Levels of Flavor</h1>
-<div class="slogan">THERE’S LEVELS TO THIS!</div>
+  <h1 class="main-title">THERE’S LEVELS TO THIS!</h1>
+  <div class="sub-brand">Powered by Levels of Flavor</div>
 
-<div class="nav-buttons">
-<a href="#">MAKE MONEY</a>
-<a href="#">DOWNLOADS</a>
-<a href="#">PACKAGES</a>
-<a href="#">A LA CARTE</a>
-<a href="#">GET STARTED</a>
-</div>
+  <div class="nav-buttons">
+    <a href="#research">MARKET RESEARCH</a>
+    <a href="#earn">EARN WITH DOORDASH</a>
+    <a href="#downloads">DOWNLOADS</a>
+    <a href="#packages">PACKAGES</a>
+    <a href="#alacarte">A LA CARTE</a>
+  </div>
 </header>
 
 <section class="hero">
-<div class="container">
-<h2>Build Income → Then Build Your Business</h2>
-<p>Start with cashflow first. Then build your brand and scale.</p>
+  <div class="container">
+    <h2>Build Income First. Then Build The Business.</h2>
+    <p>
+      This page is built around one idea: there are levels to starting, funding, branding,
+      structuring, and scaling a business. Start where your money is right now and move up.
+    </p>
 
-<div class="hero-actions">
-<a href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">MAKE MONEY NOW</a>
-<a href="#">VIEW DOWNLOADS</a>
-</div>
-</div>
+    <a class="btn" style="max-width:330px;" href="#research">START WITH MARKET RESEARCH</a>
+  </div>
 </section>
 
-<section class="section">
-<div class="container">
+<section class="section" id="research">
+  <div class="container">
+    <h2>Market Research That Pays You Back</h2>
 
-<h2>A La Carte</h2>
+    <p class="section-intro">
+      Before you open a food business, don’t guess where the customers are.
+      Get paid to drive the areas you plan to serve, study what people order,
+      see which restaurants stay busy, and learn where your menu should be available for delivery.
+    </p>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>Menu Design</h3>
-<div class="price">$149</div>
+      <div class="card">
+        <h3>Scout Areas You Would’ve Never Seen</h3>
+        <p>
+          Drive through neighborhoods, plazas, shopping strips, downtown areas, suburbs,
+          and delivery zones you may have never visited otherwise.
+        </p>
+      </div>
 
-<details>
-<summary>What You Get</summary>
-<ul>
-<li>Menu layout</li>
-<li>Print + digital</li>
-</ul>
-</details>
+      <div class="card">
+        <h3>Study Competitors In Real Time</h3>
+        <p>
+          Watch wait times, packaging, staff speed, pickup flow, menu pricing,
+          traffic patterns, and which restaurants stay busy.
+        </p>
+      </div>
 
-<details>
-<summary>Add Food Photography ($49)</summary>
-<ul>
-<li>Plate photos</li>
-<li>Menu-ready images</li>
-</ul>
-</details>
+      <div class="card">
+        <h3>Learn Customer Behavior</h3>
+        <p>
+          See what people are ordering, when they order, what areas tip better,
+          and which food categories move during lunch, dinner, and late night.
+        </p>
+      </div>
 
-<a class="btn">Request</a>
-</div>
+      <div class="card">
+        <h3>Find Menu Opportunity</h3>
+        <p>
+          Use delivery demand to help decide what items belong on your menu,
+          what areas should get delivery, and where your food concept can compete.
+        </p>
+      </div>
 
-<div class="card"><h3>Business Card</h3><div class="price">$49</div><a class="btn">Order</a></div>
-<div class="card"><h3>Flyer</h3><div class="price">$99</div><a class="btn">Order</a></div>
-<div class="card"><h3>Yard Sign</h3><div class="price">$69</div><a class="btn">Order</a></div>
-<div class="card"><h3>T-Shirt</h3><div class="price">$49/side</div><a class="btn">Order</a></div>
+      <div class="card">
+        <h3>Get Paid While Learning</h3>
+        <p>
+          Instead of spending money blindly, use DoorDash as paid research.
+          You earn while building knowledge that helps your business decisions.
+        </p>
+      </div>
 
-</div>
+      <div class="card">
+        <h3>Recruit While You Research</h3>
+        <p>
+          Notice strong workers, fast restaurants, reliable people, and potential team members
+          before you open your own operation.
+        </p>
+      </div>
 
-</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="earn">
+  <div class="container">
+    <h2>Earn Money Now With DoorDash</h2>
+
+    <p class="section-intro">
+      DoorDash is not just delivery. Used correctly, it can be income, market research,
+      competitor research, location scouting, and customer behavior education.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>DoorDash Referral</h3>
+        <div class="price">Free Start</div>
+
+        <details>
+          <summary>What This Helps You Do</summary>
+          <ul>
+            <li>Start earning now</li>
+            <li>Learn your local food market</li>
+            <li>Research high-demand areas</li>
+            <li>Study competitors while getting paid</li>
+            <li>Find delivery zones for your future menu</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+          START WITH DOORDASH
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>DoorDash Cheat Codes</h3>
+        <div class="price">$9.99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Best zone strategy</li>
+            <li>Best time blocks</li>
+            <li>Dollar-per-mile rules</li>
+            <li>Orders to avoid</li>
+            <li>Stacking strategy</li>
+            <li>Google Maps route method</li>
+            <li>How to use DoorDash for paid market research</li>
+          </ul>
+        </details>
+
+        <a class="btn btn-dark" href="downloads/doordash-cheat-codes.pdf" download>
+          DOWNLOAD CHEAT CODES
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="downloads">
+  <div class="container">
+    <h2>Paid Downloads</h2>
+
+    <p class="section-intro">
+      Buy the step you need. Each download is designed so you can open it on your phone,
+      follow the steps, and move without waiting.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Paid Market Research Blueprint</h3>
+        <div class="price">$14.99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Location scouting checklist</li>
+            <li>Competitor observation sheet</li>
+            <li>Customer behavior tracker</li>
+            <li>Menu opportunity notes</li>
+            <li>Delivery zone planning prompts</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="downloads/paid-market-research-blueprint.pdf" download>
+          DOWNLOAD BLUEPRINT
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>LLC Structure Blueprint</h3>
+        <div class="price">$29.99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Operating LLC overview</li>
+            <li>Business separation checklist</li>
+            <li>Business banking checklist</li>
+            <li>Recordkeeping basics</li>
+            <li>Common beginner mistakes</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="downloads/llc-structure-blueprint.pdf" download>
+          DOWNLOAD LLC BLUEPRINT
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Holding Company Blueprint</h3>
+        <div class="price">$49.99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Operating LLC vs Holding LLC explanation</li>
+            <li>Asset separation overview</li>
+            <li>Ownership flow example</li>
+            <li>Risk separation mindset</li>
+            <li>What belongs in operations vs holding</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="downloads/holding-company-blueprint.pdf" download>
+          DOWNLOAD HOLDING BLUEPRINT
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="packages">
+  <div class="container">
+    <h2>Corporate Identity Packages</h2>
+
+    <p class="section-intro">
+      Packages are for people who want their business to look real from the start.
+      Open each package to see exactly what is included.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Corporate Identity Package A</h3>
+        <div class="price">$99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Basic logo direction</li>
+            <li>Business card design</li>
+            <li>Basic flyer design</li>
+            <li>Starter color direction</li>
+            <li>Print-ready digital files</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="#order">REQUEST PACKAGE A</a>
+      </div>
+
+      <div class="card">
+        <h3>Corporate Identity Package B</h3>
+        <div class="price">$199</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Everything in Package A</li>
+            <li>Menu design</li>
+            <li>Yard sign design</li>
+            <li>Social media cover graphic</li>
+            <li>Vehicle magnet design</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="#order">REQUEST PACKAGE B</a>
+      </div>
+
+      <div class="card">
+        <h3>Corporate Identity Package C</h3>
+        <div class="price">$399</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Everything in Package B</li>
+            <li>Basic one-page website layout</li>
+            <li>Vehicle magnet or partial wrap concept</li>
+            <li>T-shirt / heat press design concept</li>
+            <li>Launch-ready branding direction</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="#order">REQUEST PACKAGE C</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="alacarte">
+  <div class="container">
+    <h2>A La Carte Services</h2>
+
+    <p class="section-intro">
+      Individual services are hidden inside each button area so the page stays clean.
+      Open what you need, then request that service.
+    </p>
+
+    <div class="accordion">
+
+      <details>
+        <summary>Menu Design — $149</summary>
+        <div class="service-grid">
+          <div class="service-box">
+            <h4>What You Get</h4>
+            <ul>
+              <li>Menu layout design</li>
+              <li>Clean readable format</li>
+              <li>Print + digital file</li>
+              <li>Brand styling</li>
+              <li>Organized pricing structure</li>
+            </ul>
+
+            <details>
+              <summary>Add Food Photography — $49</summary>
+              <ul>
+                <li>Plate presentation photos</li>
+                <li>Food-focused shots</li>
+                <li>Menu-ready images</li>
+                <li>Basic editing included</li>
+              </ul>
+            </details>
+
+            <p class="note">Standard delivery: 7–10 business days. Rush available.</p>
+            <a class="btn" href="#order">REQUEST MENU DESIGN</a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Business Card Design — $49</summary>
+        <div class="service-grid">
+          <div class="service-box">
+            <h4>What You Get</h4>
+            <ul>
+              <li>Front + back design</li>
+              <li>Clean professional layout</li>
+              <li>Print-ready file</li>
+              <li>Digital preview</li>
+            </ul>
+            <p class="note">Standard delivery: 7–10 business days. Rush available.</p>
+            <a class="btn" href="#order">REQUEST BUSINESS CARD</a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Flyer Design — $99</summary>
+        <div class="service-grid">
+          <div class="service-box">
+            <h4>What You Get</h4>
+            <ul>
+              <li>High-impact flyer layout</li>
+              <li>Marketing-focused design</li>
+              <li>Print + digital version</li>
+              <li>Business-ready layout</li>
+            </ul>
+            <p class="note">Standard delivery: 7–10 business days. Rush available.</p>
+            <a class="btn" href="#order">REQUEST FLYER</a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Yard Sign Design — $69</summary>
+        <div class="service-grid">
+          <div class="service-box">
+            <h4>What You Get</h4>
+            <ul>
+              <li>Bold readable design</li>
+              <li>High-visibility layout</li>
+              <li>Print-ready file</li>
+            </ul>
+            <p class="note">Standard delivery: 7–10 business days. Rush available.</p>
+            <a class="btn" href="#order">REQUEST YARD SIGN</a>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>T-Shirt Design — $49 / side</summary>
+        <div class="service-grid">
+          <div class="service-box">
+            <h4>What You Get</h4>
+            <ul>
+              <li>Front OR back design</li>
+              <li>Heat press friendly layout</li>
+              <li>Brand-based design</li>
+              <li>Print-ready file</li>
+            </ul>
+            <p class="note">Standard delivery: 7–10 business days. Rush available.</p>
+            <a class="btn" href="#order">REQUEST T-SHIRT DESIGN</a>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="section highlight" id="order">
+  <div class="container">
+    <h2>Request Your Level</h2>
+
+    <p class="section-intro">
+      Tell us what you need and what level you’re starting from.
+    </p>
+
+    <form action="https://formspree.io/f/mlgazagn" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <br>
+      <input type="text" name="interest" placeholder="Example: Menu, Package A, DoorDash Guide, LLC Blueprint">
+      <br>
+      <button class="btn" type="submit">SEND REQUEST</button>
+    </form>
+  </div>
 </section>
 
 <footer>
-© Levels of Flavor
+  <p>Educational content only. This site does not provide legal, tax, financial, or investment advice.</p>
+  <p>Some links may be affiliate links. We may earn a commission at no extra cost to you.</p>
+  <p>© 2026 — THERE’S LEVELS TO THIS! — Powered by Levels of Flavor</p>
 </footer>
 
 </body>
