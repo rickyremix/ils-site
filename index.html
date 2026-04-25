@@ -1,40 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levels of Flavor — THERE’S LEVELS TO THIS!</title>
+
 <style>
-.package {
-  background:#151515;
-  margin:20px auto;
-  padding:20px;
-  border-radius:10px;
-  max-width:400px;
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
 }
 
-.price-btn {
-  width:100%;
-  padding:15px;
-  font-size:18px;
-  font-weight:bold;
-  background:#facc15;
-  color:#000;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
+header {
+  background: #000;
+  padding: 55px 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid #222;
 }
 
-.details {
-  display:none;
-  margin-top:15px;
-  text-align:left;
-  font-size:14px;
-  color:#ddd;
+.brand {
+  font-size: 64px;
+  font-weight: 900;
+  color: #facc15;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
-.details ul {
-  padding-left:20px;
+.slogan {
+  margin-top: 30px;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+
+.nav {
+  margin-top: 35px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #000, #2a1f00);
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: auto;
+  color: #ddd;
+  font-size: 18px;
+}
+
+.section {
+  padding: 75px 20px;
+  max-width: 1150px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  color: #facc15;
+  font-size: 36px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #151515;
+  border: 1px solid #333;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: left;
+}
+
+.card h3 {
+  color: #facc15;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  background: #facc15;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-dark {
+  background: transparent;
+  color: #facc15;
+  border: 2px solid #facc15;
+}
+
+details {
+  margin-top: 15px;
+  background: #0e0e0e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 900;
+  color: #facc15;
+}
+
+details ul {
+  margin-top: 12px;
+  padding-left: 20px;
+  color: #e5e5e5;
+}
+
+details li {
+  margin-bottom: 8px;
+}
+
+.highlight {
+  background: #facc15;
+  color: #000;
+  max-width: none;
+}
+
+.highlight h2 {
+  color: #000;
+}
+
+input {
+  padding: 14px;
+  width: 90%;
+  max-width: 350px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+footer {
+  background: #000;
+  border-top: 1px solid #222;
+  padding: 40px 20px;
+  margin-top: 50px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .brand { font-size: 42px; }
+  .slogan { font-size: 16px; letter-spacing: 2px; }
+  .hero h2 { font-size: 30px; }
 }
 </style>
+</head>
 
-<script>
-function toggleDetails(id) {
-  var x = document.getElementById(id);
-  x.style.display = (x.style.display === "block") ? "none" : "block";
-}
-</script>
+<body>
+
+<header>
+  <h1 class="brand">Levels of Flavor</h1>
+  <div class="slogan">THERE’S LEVELS TO THIS!</div>
+
+  <div class="nav">
+    <a href="#make-money">Make Money Now</a>
+    <a href="#corporate">Corporate Identity Packages</a>
+    <a href="#alacarte">A La Carte Services</a>
+    <a href="#contact">Get Started</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Build Income. Build Structure. Build A Real Business.</h2>
+  <p>
+    Start with cashflow, learn your market, structure your business, build your brand,
+    and create something that can scale.
+  </p>
+
+  <a class="btn" style="max-width:320px;" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+    Make Money Now
+  </a>
+</section>
+
+<section class="section" id="make-money">
+  <h2>Make Money Now</h2>
+  <p>Start earning while learning your market.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>DoorDash Referral</h3>
+      <p>Start earning with DoorDash and use it as paid market research.</p>
+      <div class="price">Start Free</div>
+
+      <details>
+        <summary>What This Helps You Do</summary>
+        <ul>
+          <li>Start earning immediately</li>
+          <li>Drive areas you may want to open in</li>
+          <li>Study competitors while getting paid</li>
+          <li>Learn what people actually order</li>
+          <li>Find high-demand areas</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+        Start With DoorDash
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>DoorDash Cheat Codes</h3>
+      <p>Downloadable PDF product. Replace the blank PDF file later with the finished guide.</p>
+      <div class="price">$9.99</div>
+
+      <details>
+        <summary>What They Get</summary>
+        <ul>
+          <li>Best zones to dash</li>
+          <li>Best times to work</li>
+          <li>Dollar-per-mile rules</li>
+          <li>Orders to avoid</li>
+          <li>Stacking strategy</li>
+          <li>Google Maps route hack</li>
+          <li>How to use DoorDash as paid market research</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="downloads/doordash-cheat-codes.pdf" download>
+        Download Cheat Codes PDF — $9.99
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="corporate">
+  <h2>Corporate Identity Packages</h2>
+  <p>Pick the level that fits your money situation now. Each package expands so customers see exactly what they get.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Corporate Identity Package A</h3>
+      <p>Basic starter identity for a new business.</p>
+      <div class="price">$99</div>
+
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Basic logo direction</li>
+          <li>Business card design</li>
+          <li>Basic flyer design</li>
+          <li>Starter brand colors</li>
+          <li>Simple social media profile image</li>
+          <li>Downloadable print-ready files</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="downloads/corporate-identity-package-a.pdf" download>
+        Download Package A
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Corporate Identity Package B</h3>
+      <p>Better package for businesses ready to look more professional.</p>
+      <div class="price">$199</div>
+
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Logo direction</li>
+          <li>Business card design</li>
+          <li>Flyer or menu design</li>
+          <li>Yard sign design</li>
+          <li>Vehicle magnet design</li>
+          <li>Social media cover image</li>
+          <li>Downloadable print-ready files</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="downloads/corporate-identity-package-b.pdf" download>
+        Download Package B
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Corporate Identity Package C</h3>
+      <p>Full starter identity for businesses ready to launch strong.</p>
+      <div class="price">$399</div>
+
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Logo direction</li>
+          <li>Business card design</li>
+          <li>Flyer design</li>
+          <li>Menu design</li>
+          <li>Yard sign design</li>
+          <li>Vehicle magnet or partial wrap concept</li>
+          <li>T-shirt / heat press design concept</li>
+          <li>Basic one-page website layout</li>
+          <li>Downloadable print-ready files</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="downloads/corporate-identity-package-c.pdf" download>
+        Download Package C
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="alacarte">
+  <h2>A La Carte Services</h2>
+  <p>Buy only what you need. Every service can be purchased individually.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Business Card Design</h3>
+      <div class="price">$35</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Front and back card design</li>
+          <li>Print-ready file</li>
+          <li>Digital preview</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/business-card-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Flyer Design</h3>
+      <div class="price">$45</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>One-sided flyer layout</li>
+          <li>Print-ready file</li>
+          <li>Digital promo version</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/flyer-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Menu Design</h3>
+      <div class="price">$75</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Menu layout</li>
+          <li>Food business focused design</li>
+          <li>Print-ready file</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/menu-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Yard Sign Design</h3>
+      <div class="price">$45</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Yard sign layout</li>
+          <li>Bold readable design</li>
+          <li>Print-ready file</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/yard-sign-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Vehicle Magnet Design</h3>
+      <div class="price">$75</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Vehicle magnet layout</li>
+          <li>Business name, phone, slogan, services</li>
+          <li>Print-ready file</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/vehicle-magnet-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Partial Vehicle Wrap Concept</h3>
+      <div class="price">$150</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Basic wrap concept</li>
+          <li>Brand placement idea</li>
+          <li>Design direction for installer</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/partial-wrap-concept.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>T-Shirt / Heat Press Design</h3>
+      <div class="price">$45</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Basic shirt design</li>
+          <li>Heat press friendly layout</li>
+          <li>Front or back design concept</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/tshirt-design.pdf" download>Download / Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Basic Website Setup</h3>
+      <div class="price">$149+</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>One-page landing page</li>
+          <li>Mobile-friendly layout</li>
+          <li>Contact form</li>
+          <li>Call-to-action buttons</li>
+        </ul>
+      </details>
+      <a class="btn" href="#contact">Request Website Setup</a>
+    </div>
+
+    <div class="card">
+      <h3>LLC / Structure Walkthrough</h3>
+      <div class="price">$49+</div>
+      <details>
+        <summary>What You Get</summary>
+        <ul>
+          <li>Operating LLC explanation</li>
+          <li>Holding company overview</li>
+          <li>Trust planning starter overview</li>
+          <li>Business separation checklist</li>
+        </ul>
+      </details>
+      <a class="btn" href="downloads/llc-structure-walkthrough.pdf" download>Download / Order</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section highlight" id="contact">
+  <h2>Get Started</h2>
+  <p>Tell us what you need and what level you’re starting from.</p>
+
+  <form action="https://formspree.io/f/mlgazagn" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <br>
+    <input type="text" name="interest" placeholder="Example: Package A, Menu Design, Website, LLC Setup">
+    <br>
+    <button class="btn" type="submit">Request Info</button>
+  </form>
+</section>
+
+<footer>
+  <p>Educational content only. This site does not provide legal, tax, financial, or investment advice.</p>
+  <p>Some links may be affiliate links. We may earn a commission at no extra cost to you.</p>
+  <p>© 2026 Levels of Flavor — THERE’S LEVELS TO THIS!</p>
+</footer>
+
+</body>
+</html>
