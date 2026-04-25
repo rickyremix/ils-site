@@ -12,163 +12,238 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #111;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+
+    .topbar {
+      background: #facc15;
+      color: #000;
+      padding: 12px 20px;
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     header {
+      padding: 22px 20px;
       background: #000;
-      color: white;
-      padding: 20px;
+      border-bottom: 1px solid #222;
       text-align: center;
     }
 
     header h2 {
       margin: 0;
-      font-size: 18px;
-      letter-spacing: 1px;
       color: #facc15;
+      font-size: 20px;
     }
 
     nav {
-      margin-top: 12px;
-      font-size: 14px;
+      margin-top: 15px;
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       margin: 0 10px;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     .hero {
-      background: linear-gradient(135deg, #111 0%, #333 100%);
-      color: white;
-      padding: 70px 20px;
+      min-height: 75vh;
+      padding: 80px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      background:
+        radial-gradient(circle at top left, rgba(250,204,21,.25), transparent 35%),
+        linear-gradient(135deg, #000 0%, #171717 60%, #2a1f00 100%);
     }
 
-    .hero h1 {
-      font-size: 42px;
-      max-width: 850px;
-      margin: 0 auto 20px;
-      line-height: 1.15;
+    .hero-box {
+      max-width: 900px;
+      padding: 35px;
+      border: 2px solid #facc15;
+      border-radius: 22px;
+      background: rgba(0,0,0,.65);
+      box-shadow: 0 0 45px rgba(250,204,21,.25);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #facc15;
+      color: #000;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      margin: 10px 0 20px;
     }
 
     .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 25px;
+      font-size: 20px;
       color: #e5e5e5;
+      max-width: 720px;
+      margin: 0 auto 25px;
     }
 
     .btn {
       display: inline-block;
-      padding: 16px 22px;
-      margin: 8px;
-      font-size: 16px;
-      font-weight: bold;
       background: #facc15;
       color: #000;
+      padding: 16px 24px;
+      margin: 8px;
+      border-radius: 10px;
+      font-weight: 900;
       text-decoration: none;
-      border-radius: 8px;
       border: none;
       cursor: pointer;
+      font-size: 16px;
     }
 
-    .btn.dark {
-      background: #000;
-      color: white;
+    .btn.alt {
+      background: transparent;
+      color: #facc15;
+      border: 2px solid #facc15;
     }
 
-    .section {
-      padding: 55px 20px;
-      text-align: center;
-    }
-
-    .section.white {
-      background: white;
+    section {
+      padding: 70px 20px;
     }
 
     .container {
-      max-width: 980px;
+      max-width: 1100px;
       margin: auto;
     }
 
-    .section h2 {
-      font-size: 32px;
+    .section-title {
+      text-align: center;
+      font-size: 36px;
       margin-bottom: 15px;
+      color: #facc15;
     }
 
-    .section p {
-      max-width: 720px;
-      margin: 0 auto 20px;
-      font-size: 17px;
-      color: #333;
+    .section-subtitle {
+      text-align: center;
+      color: #d4d4d4;
+      max-width: 760px;
+      margin: 0 auto 35px;
+      font-size: 18px;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
     }
 
     .card {
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      text-align: center;
+      background: #151515;
+      border: 1px solid #333;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
     }
 
     .card h3 {
+      color: #facc15;
       margin-top: 0;
-      font-size: 22px;
+      font-size: 24px;
     }
 
     .card p {
-      font-size: 15px;
+      color: #d4d4d4;
     }
 
-    .highlight {
+    .blueprint {
       background: #facc15;
-      padding: 40px 20px;
+      color: #000;
       text-align: center;
     }
 
+    .blueprint h2 {
+      font-size: 38px;
+      margin-top: 0;
+    }
+
+    .blueprint p {
+      max-width: 760px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
     input {
-      padding: 14px;
-      margin: 10px;
       width: 90%;
-      max-width: 350px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      max-width: 380px;
+      padding: 16px;
+      border-radius: 10px;
+      border: 2px solid #000;
       font-size: 16px;
+      margin: 8px;
+    }
+
+    .blueprint .btn {
+      background: #000;
+      color: #fff;
+    }
+
+    .tools {
+      background: #101010;
+    }
+
+    .final {
+      background: linear-gradient(135deg, #171717, #000);
+      text-align: center;
+    }
+
+    .final h2 {
+      font-size: 38px;
+      color: #facc15;
+    }
+
+    .final p {
+      max-width: 760px;
+      margin: 0 auto 25px;
+      color: #d4d4d4;
+      font-size: 18px;
     }
 
     footer {
       background: #000;
-      color: white;
+      color: #888;
       text-align: center;
-      padding: 25px 15px;
+      padding: 30px 15px;
       font-size: 13px;
+      border-top: 1px solid #222;
     }
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 32px;
+    @media (max-width: 650px) {
+      h1 {
+        font-size: 36px;
       }
 
-      .section h2 {
-        font-size: 26px;
+      .hero {
+        padding: 55px 15px;
+      }
+
+      .hero-box {
+        padding: 25px 15px;
       }
 
       nav a {
         display: inline-block;
-        margin: 5px;
+        margin: 6px;
       }
     }
   </style>
@@ -176,8 +251,12 @@
 
 <body>
 
+<div class="topbar">
+  Paid market research. Real business build. No fake guru talk.
+</div>
+
 <header>
-  <h2>REAL ENTREPRENEUR. REAL BUILD. NO GURUS.</h2>
+  <h2>BUILD INCOME FROM SCRATCH</h2>
   <nav>
     <a href="#method">Method</a>
     <a href="#blueprint">Blueprint</a>
@@ -187,84 +266,105 @@
 </header>
 
 <section class="hero">
-  <h1>I’m Building Real Income From Scratch — Watch The Process</h1>
-  <p>No recycled advice. No fake screenshots. I’m documenting everything in real time so you can follow along and start yourself.</p>
+  <div class="hero-box">
+    <span class="badge">Real Entrepreneur. Real Build.</span>
 
-  <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start Making Money Now</a>
-  <a class="btn dark" href="#blueprint">Get The Free Blueprint</a>
-</section>
+    <h1>I’m Building Real Income From Scratch — Watch The Process</h1>
 
-<section class="section white" id="method">
-  <div class="container">
-    <h2>Get Paid While Learning The Market</h2>
-    <p>I use DoorDash to make money AND study what people are buying before starting a business.</p>
+    <p>
+      No recycled advice. No fake screenshots. I’m documenting what works,
+      what doesn’t, and how I’m building income in real time.
+    </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Learn What Sells</h3>
-        <p>See what people actually order in real neighborhoods.</p>
-      </div>
-
-      <div class="card">
-        <h3>Find Hot Locations</h3>
-        <p>Watch traffic, timing, restaurant flow, and customer demand.</p>
-      </div>
-
-      <div class="card">
-        <h3>Get Paid To Research</h3>
-        <p>Earn money while collecting real market information.</p>
-      </div>
-    </div>
-
-    <br>
-    <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start With This Method</a>
+    <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start Making Money Now</a>
+    <a class="btn alt" href="#blueprint">Get The Free Blueprint</a>
   </div>
 </section>
 
-<section class="highlight" id="blueprint">
+<section id="method">
+  <div class="container">
+    <h2 class="section-title">Get Paid While Learning The Market</h2>
+    <p class="section-subtitle">
+      I use DoorDash to make money while studying what people buy,
+      where demand is, and where business opportunities are hiding.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>01. Learn What Sells</h3>
+        <p>See what people are ordering in real neighborhoods instead of guessing.</p>
+      </div>
+
+      <div class="card">
+        <h3>02. Find Hot Locations</h3>
+        <p>Study restaurants, traffic, timing, wait times, customer flow, and demand.</p>
+      </div>
+
+      <div class="card">
+        <h3>03. Get Paid To Research</h3>
+        <p>Earn while collecting the information most new business owners pay for later.</p>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:30px;">
+      <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start With This Method</a>
+    </p>
+  </div>
+</section>
+
+<section class="blueprint" id="blueprint">
   <div class="container">
     <h2>Get My Free Blueprint</h2>
-    <p>Learn how to start making money immediately, avoid beginner mistakes, and build income while planning your business.</p>
+    <p>
+      Learn how to start making money immediately, avoid beginner mistakes,
+      and build income while planning your business.
+    </p>
 
     <form action="https://formspree.io/f/mlgazagn" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required>
       <br>
-      <button class="btn dark" type="submit">Get Access</button>
+      <button class="btn" type="submit">Get Access</button>
     </form>
   </div>
 </section>
 
-<section class="section" id="tools">
+<section class="tools" id="tools">
   <div class="container">
-    <h2>Tools I Use</h2>
-    <p>Simple tools to start, build, and grow.</p>
+    <h2 class="section-title">Tools I Use</h2>
+    <p class="section-subtitle">
+      Simple tools to start, build, and grow without overcomplicating the process.
+    </p>
 
     <div class="cards">
       <div class="card">
         <h3>Start Your Business</h3>
-        <p>Set up your business foundation.</p>
-        <a class="btn dark" href="https://www.zenbusiness.com/" target="_blank">Start Your Business</a>
+        <p>Build a business foundation before money starts moving.</p>
+        <a class="btn" href="https://www.zenbusiness.com/" target="_blank">Start Your Business</a>
       </div>
 
       <div class="card">
         <h3>Build Your Website</h3>
-        <p>Create landing pages, funnels, and online systems.</p>
-        <a class="btn dark" href="https://systeme.io/" target="_blank">Build Your Website</a>
+        <p>Create pages, funnels, and online systems to capture attention.</p>
+        <a class="btn" href="https://systeme.io/" target="_blank">Build Your Website</a>
       </div>
 
       <div class="card">
         <h3>Make Money Now</h3>
-        <p>Start earning while learning your local market.</p>
-        <a class="btn dark" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Make Money Now</a>
+        <p>Start earning while learning your local food market.</p>
+        <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Make Money Now</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section white" id="follow">
+<section class="final" id="follow">
   <div class="container">
     <h2>Watch Me Build In Real Time</h2>
-    <p>I show what works, what doesn’t, and how I’m building income from scratch — step by step, in public.</p>
+    <p>
+      I’m documenting the build: income moves, food business strategy,
+      location scouting, affiliate marketing, and scaling from the ground up.
+    </p>
+
     <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start The Same Way</a>
   </div>
 </section>
