@@ -1,259 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Levels of Flavor — There’s Levels To This</title>
 
 <style>
-* { box-sizing: border-box; }
-
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial, sans-serif;
-  background: #0b0b0b;
-  color: #fff;
-}
-
-.topbar {
-  background: #facc15;
-  color: #000;
-  padding: 12px;
-  text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
+  background:#0b0b0b;
+  color:#fff;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  border-bottom: 1px solid #222;
+  background:#000;
+  padding:15px;
+  text-align:center;
 }
 
-header h1 {
-  margin: 0;
-  color: #facc15;
+h1 { color:#facc15; margin:5px; }
+h2 { margin:10px 0; }
+
+.nav {
+  position:relative;
+  display:inline-block;
 }
 
-header h2 {
-  margin: 5px 0 0;
-  font-size: 16px;
-  letter-spacing: 2px;
+.nav button {
+  background:#facc15;
+  color:#000;
+  padding:10px 15px;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 14px;
+.dropdown {
+  display:none;
+  position:absolute;
+  background:#111;
+  min-width:200px;
+  border:1px solid #333;
+}
+
+.dropdown a {
+  display:block;
+  padding:10px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.dropdown a:hover {
+  background:#222;
+}
+
+.nav:hover .dropdown {
+  display:block;
 }
 
 .hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #000, #2a1f00);
-}
-
-.hero h1 {
-  font-size: 42px;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: auto;
-}
-
-.btn {
-  display: inline-block;
-  padding: 15px 20px;
-  margin: 10px;
-  background: #facc15;
-  color: #000;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  text-align:center;
+  padding:60px 20px;
 }
 
 .section {
-  padding: 60px 20px;
-  text-align: center;
+  padding:50px 20px;
+  text-align:center;
+}
+
+.btn {
+  display:inline-block;
+  padding:15px 25px;
+  margin:15px;
+  font-weight:bold;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-primary {
+  background:#facc15;
+  color:#000;
+}
+
+.btn-dark {
+  background:#000;
+  color:#fff;
+  border:2px solid #facc15;
+}
+
+.btn:hover {
+  transform:scale(1.05);
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-  gap: 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
 .card {
-  background: #151515;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-.highlight {
-  background: #facc15;
-  color: #000;
-}
-
-input {
-  padding: 12px;
-  width: 90%;
-  max-width: 320px;
-  margin: 10px;
-  border-radius: 6px;
-  border: none;
-}
-
-.socials a {
-  display: inline-block;
-  margin: 10px;
-  color: #facc15;
-  font-weight: bold;
-  text-decoration: none;
+  background:#151515;
+  padding:20px;
+  border-radius:10px;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  font-size: 13px;
+  text-align:center;
+  padding:20px;
+  background:#000;
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-THERE’S LEVELS TO THIS!
-</div>
-
 <header>
 <h1>Levels of Flavor</h1>
-<h2>Real Build • Real Income • Real Strategy</h2>
+<h2>THERE’S LEVELS TO THIS!</h2>
 
-<nav>
-<a href="#market">Market</a>
-<a href="#wealth">Wealth</a>
-<a href="#structure">Structure</a>
-<a href="#follow">Follow</a>
-</nav>
+<div class="nav">
+<button>Start Here ▼</button>
+<div class="dropdown">
+<a href="#step1">Make Money Now</a>
+<a href="#step2">Start Business</a>
+<a href="#step3">Structure</a>
+<a href="#step4">We Build It</a>
+</div>
+</div>
+
 </header>
 
 <section class="hero">
-<h1>Build Income. Study Your Market. Scale Smart.</h1>
-<p>
-Market your food business while getting paid to learn exactly what sells,
-where demand is, and how to position your menu before opening.
-</p>
+<h2>Build Income. Build Structure. Build Real Business.</h2>
+<p>Stop guessing. Follow the levels.</p>
 
-<a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start Getting Paid</a>
-<a class="btn" href="#blueprint">Get The Blueprint</a>
+<a class="btn btn-primary" href="#step1">
+START LEVEL 1
+</a>
 </section>
 
-<section class="section" id="market">
-<h2>Market While Getting Paid</h2>
+<section class="section" id="step1">
+<h2>Level 1 — Make Money Now</h2>
+<p>Start generating income immediately.</p>
+
+<a class="btn btn-primary" href="#">
+Get DoorDash Cheat Codes — $9.99
+</a>
+</section>
+
+<section class="section" id="step2">
+<h2>Level 2 — Start Your Business</h2>
 
 <div class="cards">
 <div class="card">
-<h3>Scout Locations</h3>
-<p>Drive areas you would’ve never gone to and learn your market.</p>
+<h3>Low Budget</h3>
+<p>Start with what you have.</p>
+<a class="btn btn-dark" href="#">Get Starter Guide — $29</a>
 </div>
 
 <div class="card">
-<h3>Study Competitors</h3>
-<p>See what stays busy, what sells, and what doesn’t.</p>
+<h3>Moderate Budget</h3>
+<p>Build with structure.</p>
+<a class="btn btn-dark" href="#">Get Full Startup Pack — $49</a>
 </div>
 
 <div class="card">
-<h3>Learn Behavior</h3>
-<p>Understand what customers actually buy and when.</p>
-</div>
-
-<div class="card">
-<h3>Earn While Doing It</h3>
-<p>Use DoorDash to get paid while learning everything.</p>
+<h3>Ready To Go</h3>
+<p>Move faster with full system.</p>
+<a class="btn btn-dark" href="#">Get Complete Bundle — $99</a>
 </div>
 </div>
 
-<a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">Start Market Research</a>
 </section>
 
-<section class="section highlight" id="wealth">
-<h2>Build Generational Wealth</h2>
+<section class="section" id="step3">
+<h2>Level 3 — Structure & Protect</h2>
+<p>Set your business up the right way.</p>
 
-<div class="cards">
-<div class="card">
-<h3>Earn</h3>
-<p>Create real income first.</p>
-</div>
-
-<div class="card">
-<h3>Structure</h3>
-<p>Separate personal and business properly.</p>
-</div>
-
-<div class="card">
-<h3>Protect</h3>
-<p>Use smart business practices to reduce risk.</p>
-</div>
-
-<div class="card">
-<h3>Scale</h3>
-<p>Reinvest and expand your operation.</p>
-</div>
-</div>
+<a class="btn btn-primary" href="#">
+Get Structure Blueprint — $49
+</a>
 </section>
 
-<section class="section" id="structure">
-<h2>Business Structure Blueprint</h2>
+<section class="section" id="step4">
+<h2>Level 4 — We Build It For You</h2>
+<p>Skip the guesswork. We help you launch.</p>
 
-<div class="cards">
-<div class="card">
-<h3>Operating LLC</h3>
-<p>Handles daily business activity.</p>
-</div>
-
-<div class="card">
-<h3>Holding Company</h3>
-<p>Owns assets and separates risk.</p>
-</div>
-
-<div class="card">
-<h3>Trust Planning</h3>
-<p>Organize long-term ownership.</p>
-</div>
-</div>
-
-<a class="btn" href="https://www.zenbusiness.com/" target="_blank">Set Up Business</a>
-</section>
-
-<section class="section highlight" id="blueprint">
-<h2>Get The Blueprint</h2>
-
-<form action="https://formspree.io/f/mlgazagn" method="POST">
-<input type="email" name="email" placeholder="Enter your email" required>
-<br>
-<button class="btn" type="submit">Get Access</button>
-</form>
-</section>
-
-<section class="section" id="follow">
-<h2>Follow The Build</h2>
-
-<p>Watch the journey in real time across all platforms.</p>
-
-<div class="socials">
-<a href="#">TikTok</a>
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-<a href="#">Snapchat</a>
-</div>
+<a class="btn btn-primary" href="#">
+Start Done-For-You Setup
+</a>
 </section>
 
 <footer>
-Some links may be affiliate links. I may earn a commission at no extra cost to you.
+Some links may be affiliate links. We may earn commissions.
 </footer>
 
 </body>
