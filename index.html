@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Levels of Flavor — THERE’S LEVELS TO THIS!</title>
+<title>Levels of Flavor</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -17,137 +17,155 @@ body {
 
 /* HEADER */
 header {
-  background: #000;
-  padding: 60px 20px 45px;
-  text-align: center;
-  border-bottom: 1px solid #222;
+  background:#000;
+  padding:45px 20px 25px;
+  text-align:center;
+  border-bottom:1px solid #222;
 }
 
 .brand {
-  font-size: 64px;
-  font-weight: 900;
-  color: #facc15;
+  font-size:60px;
+  font-weight:900;
+  color:#facc15;
 }
 
 .slogan {
-  margin-top: 30px;
-  font-size: 22px;
-  letter-spacing: 4px;
-  font-weight: 900;
+  margin-top:15px;
+  font-size:18px;
+  letter-spacing:3px;
 }
 
-/* NAV */
+/* NAV (FIXED BIGGER) */
 .nav {
-  margin-top: 30px;
+  margin-top:20px;
 }
 
 .nav a {
-  color: #fff;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
+  color:#fff;
+  margin:0 14px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:900;
 }
 
-.nav a:hover { color: #facc15; }
+.nav a:hover { color:#facc15; }
 
-/* CONTAINER (MARGINS FIXED) */
+/* CONTAINER */
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 40px;
+  max-width:1100px;
+  margin:auto;
+  padding:0 30px;
 }
 
 /* HERO */
 .hero {
-  padding: 100px 0;
-  text-align: center;
-  background: linear-gradient(135deg,#000,#2a1f00);
+  padding:60px 0 40px;
+  text-align:center;
+  background:linear-gradient(135deg,#000,#2a1f00);
 }
 
 .hero h2 {
-  font-size: 42px;
+  font-size:36px;
+  font-weight:900;
 }
 
 .hero p {
-  max-width: 700px;
-  margin: 20px auto;
-  color: #ddd;
+  margin:15px auto 20px;
+  max-width:600px;
+  color:#ccc;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
-  padding: 120px 0;
-  text-align: center;
+  padding:60px 0;
 }
 
+/* BIG CATEGORY LABEL */
+.section-label {
+  text-align:center;
+  font-size:16px;
+  letter-spacing:3px;
+  color:#aaa;
+  margin-bottom:5px;
+  font-weight:700;
+}
+
+/* BIG TITLE */
 .section h2 {
-  font-size: 48px;
-  color: #facc15;
+  font-size:44px;
+  text-align:center;
+  color:#facc15;
+  margin-bottom:20px;
+  font-weight:900;
 }
 
 /* CARDS */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-  gap: 25px;
-  margin-top: 40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
 }
 
 .card {
-  background: #151515;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: left;
+  background:#151515;
+  padding:24px;
+  border-radius:12px;
 }
 
 .card h3 {
-  color: #facc15;
+  font-size:22px;
+  color:#facc15;
+  font-weight:900;
 }
 
 .price {
-  font-size: 30px;
-  margin: 15px 0;
+  font-size:26px;
+  font-weight:900;
+  margin:10px 0;
 }
 
 /* BUTTON */
 .btn {
-  display: block;
-  padding: 15px;
-  background: #facc15;
-  color: #000;
-  text-align: center;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 15px;
+  display:block;
+  width:100%;
+  padding:14px;
+  margin-top:12px;
+  background:#facc15;
+  color:#000;
+  text-align:center;
+  border-radius:6px;
+  font-weight:900;
+  text-decoration:none;
 }
 
-/* DETAILS DROPDOWN */
+/* DETAILS */
 details {
-  margin-top: 10px;
-  background: #0e0e0e;
-  padding: 10px;
-  border-radius: 8px;
+  margin-top:10px;
+  background:#0e0e0e;
+  padding:10px;
+  border-radius:6px;
 }
 
 summary {
-  cursor: pointer;
-  color: #facc15;
-  font-weight: bold;
+  cursor:pointer;
+  font-weight:900;
+  color:#facc15;
 }
 
 details ul {
-  margin-top: 10px;
-  padding-left: 20px;
+  margin-top:8px;
+  padding-left:18px;
+  font-size:14px;
 }
 
 /* FOOTER */
 footer {
-  padding: 40px;
-  text-align: center;
-  background: #000;
-  border-top: 1px solid #222;
-  color: #888;
+  padding:30px;
+  text-align:center;
+  background:#000;
+  border-top:1px solid #222;
+  font-size:12px;
+  color:#777;
 }
 </style>
 </head>
@@ -155,33 +173,68 @@ footer {
 <body>
 
 <header>
-  <h1 class="brand">Levels of Flavor</h1>
-  <div class="slogan">THERE’S LEVELS TO THIS!</div>
+<h1 class="brand">Levels of Flavor</h1>
+<div class="slogan">THERE’S LEVELS TO THIS!</div>
 
-  <div class="nav">
-    <a href="#money">Make Money</a>
-    <a href="#packages">Packages</a>
-    <a href="#services">A La Carte</a>
-    <a href="#contact">Start</a>
-  </div>
+<div class="nav">
+<a href="#money">Make Money</a>
+<a href="#downloads">Downloads</a>
+<a href="#packages">Packages</a>
+<a href="#services">A La Carte</a>
+<a href="#contact">Get Started</a>
+</div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h2>Build Income. Build Structure. Build Business.</h2>
-    <p>Start earning, then build your brand and scale.</p>
+<div class="container">
+<h2>Build Income → Then Build Your Business</h2>
+<p>Start with money first. Then build your brand and scale.</p>
 
-    <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
-      MAKE MONEY NOW
-    </a>
-  </div>
+<a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+START MAKING MONEY
+</a>
+</div>
 </section>
 
 <!-- MAKE MONEY -->
 <section class="section" id="money">
 <div class="container">
 
-<h2>Make Money Now</h2>
+<div class="section-label">MAKE MONEY NOW</div>
+<h2>Start Here</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>DoorDash Referral</h3>
+<div class="price">FREE</div>
+
+<details>
+<summary>What You Get</summary>
+<ul>
+<li>Start earning immediately</li>
+<li>Learn high demand areas</li>
+<li>Study competitors</li>
+</ul>
+</details>
+
+<a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+Start Now
+</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- DOWNLOADS -->
+<section class="section" id="downloads">
+<div class="container">
+
+<div class="section-label">DOWNLOADS</div>
+<h2>Make Money Tools</h2>
 
 <div class="cards">
 
@@ -194,17 +247,17 @@ footer {
 <ul>
 <li>Best zones</li>
 <li>Best times</li>
-<li>$/mile rules</li>
-<li>Orders to avoid</li>
-<li>Stacking strategy</li>
-<li>Route hack</li>
+<li>$/mile strategy</li>
+<li>Order filters</li>
+<li>Stacking system</li>
 </ul>
 </details>
 
-<a class="btn" href="#">Download PDF</a>
+<a class="btn" href="#">Download</a>
 </div>
 
 </div>
+
 </div>
 </section>
 
@@ -212,59 +265,34 @@ footer {
 <section class="section" id="packages">
 <div class="container">
 
-<h2>Corporate Identity Packages</h2>
+<div class="section-label">PACKAGES</div>
+<h2>Corporate Identity</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Package A</h3>
 <div class="price">$99</div>
-
-<details>
-<summary>What You Get</summary>
-<ul>
-<li>Logo direction</li>
-<li>Business card</li>
-<li>Flyer design</li>
-</ul>
-</details>
-
-<a class="btn" href="#contact">Get Package</a>
+<details><summary>Includes</summary><ul><li>Logo</li><li>Card</li><li>Flyer</li></ul></details>
+<a class="btn" href="#">Get</a>
 </div>
 
 <div class="card">
 <h3>Package B</h3>
 <div class="price">$199</div>
-
-<details>
-<summary>What You Get</summary>
-<ul>
-<li>Everything in A</li>
-<li>Menu design</li>
-<li>Yard sign</li>
-</ul>
-</details>
-
-<a class="btn" href="#contact">Get Package</a>
+<details><summary>Includes</summary><ul><li>A + Menu</li><li>Sign</li></ul></details>
+<a class="btn" href="#">Get</a>
 </div>
 
 <div class="card">
 <h3>Package C</h3>
 <div class="price">$399</div>
-
-<details>
-<summary>What You Get</summary>
-<ul>
-<li>Everything in B</li>
-<li>Vehicle design</li>
-<li>Website layout</li>
-</ul>
-</details>
-
-<a class="btn" href="#contact">Get Package</a>
+<details><summary>Includes</summary><ul><li>B + Website</li></ul></details>
+<a class="btn" href="#">Get</a>
 </div>
 
 </div>
+
 </div>
 </section>
 
@@ -272,46 +300,19 @@ footer {
 <section class="section" id="services">
 <div class="container">
 
-<h2>A La Carte Services</h2>
+<div class="section-label">A LA CARTE</div>
+<h2>Individual Services</h2>
 
 <div class="cards">
 
-<div class="card">
-<h3>Business Card</h3>
-<div class="price">$49</div>
-<details><summary>Includes</summary><ul><li>Design</li></ul></details>
-<a class="btn" href="#contact">Order</a>
-</div>
-
-<div class="card">
-<h3>Flyer</h3>
-<div class="price">$99</div>
-<details><summary>Includes</summary><ul><li>Marketing layout</li></ul></details>
-<a class="btn" href="#contact">Order</a>
-</div>
-
-<div class="card">
-<h3>Menu + Photos</h3>
-<div class="price">$149+</div>
-<details><summary>Includes</summary><ul><li>On-site photos</li><li>Menu layout</li></ul></details>
-<a class="btn" href="#contact">Order</a>
-</div>
-
-<div class="card">
-<h3>Yard Sign</h3>
-<div class="price">$69</div>
-<details><summary>Includes</summary><ul><li>Sign layout</li></ul></details>
-<a class="btn" href="#contact">Order</a>
-</div>
-
-<div class="card">
-<h3>T-Shirt Design</h3>
-<div class="price">$49 / side</div>
-<details><summary>Includes</summary><ul><li>Front or back design</li></ul></details>
-<a class="btn" href="#contact">Order</a>
-</div>
+<div class="card"><h3>Business Card</h3><div class="price">$49</div><a class="btn">Order</a></div>
+<div class="card"><h3>Flyer</h3><div class="price">$99</div><a class="btn">Order</a></div>
+<div class="card"><h3>Menu + Photos</h3><div class="price">$149+</div><a class="btn">Order</a></div>
+<div class="card"><h3>Yard Sign</h3><div class="price">$69</div><a class="btn">Order</a></div>
+<div class="card"><h3>T-Shirt</h3><div class="price">$49/side</div><a class="btn">Order</a></div>
 
 </div>
+
 </div>
 </section>
 
@@ -319,11 +320,12 @@ footer {
 <section class="section" id="contact">
 <div class="container">
 
-<h2>Start</h2>
+<div class="section-label">GET STARTED</div>
+<h2>Request Service</h2>
 
 <form action="https://formspree.io/f/mlgazagn" method="POST">
-<input type="email" name="email" placeholder="Email" required><br>
-<input type="text" name="info" placeholder="What do you need?"><br>
+<input type="email" name="email" placeholder="Email" required><br><br>
+<input type="text" name="info" placeholder="What do you need?"><br><br>
 <button class="btn">Submit</button>
 </form>
 
@@ -331,7 +333,7 @@ footer {
 </section>
 
 <footer>
-© 2026 Levels of Flavor — THERE’S LEVELS TO THIS!
+© Levels of Flavor
 </footer>
 
 </body>
