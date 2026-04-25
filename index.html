@@ -18,42 +18,41 @@ body {
 /* HEADER */
 header {
   background:#000;
-  padding:50px 20px 30px;
+  padding:40px 20px 20px;
   text-align:center;
   border-bottom:1px solid #222;
 }
 
 .brand {
-  font-size:56px;
+  font-size:62px;
   font-weight:900;
   color:#facc15;
-  margin:0;
 }
 
 .slogan {
-  margin-top:20px;
+  margin-top:12px;
   font-size:18px;
   letter-spacing:3px;
 }
 
 /* NAV */
 .nav-buttons {
-  margin-top:25px;
+  margin-top:18px;
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:12px;
+  gap:10px;
 }
 
 .nav-buttons a {
   background:#111;
   color:#fff;
-  padding:12px 18px;
+  padding:10px 16px;
   text-decoration:none;
   font-weight:900;
   border-radius:6px;
   border:1px solid #333;
-  font-size:15px;
+  font-size:14px;
 }
 
 .nav-buttons a:hover {
@@ -63,46 +62,47 @@ header {
 
 /* CONTAINER */
 .container {
-  max-width:1100px;
+  max-width:1000px;
   margin:auto;
-  padding:0 25px;
+  padding:0 20px;
 }
 
 /* HERO */
 .hero {
-  padding:55px 0 40px;
+  padding:40px 0 30px;
   text-align:center;
-  background:linear-gradient(135deg,#000,#2a1f00);
 }
 
 .hero h2 {
-  font-size:34px;
+  font-size:36px;
   font-weight:900;
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
 
 .hero p {
-  margin:10px auto 20px;
-  max-width:600px;
+  margin:8px auto 18px;
+  max-width:550px;
   color:#ccc;
-  font-size:16px;
+  font-size:15px;
 }
 
 /* HERO BUTTONS */
 .hero-actions {
   display:flex;
   justify-content:center;
-  gap:15px;
+  gap:12px;
   flex-wrap:wrap;
 }
 
 .hero-actions a {
   background:#facc15;
   color:#000;
-  padding:14px 20px;
+  padding:12px 18px;
   text-decoration:none;
   font-weight:900;
   border-radius:6px;
+  min-width:160px;
+  text-align:center;
 }
 
 .hero-actions a:nth-child(2) {
@@ -113,43 +113,47 @@ header {
 
 /* SECTION */
 .section {
-  padding:50px 0;
+  padding:40px 0;
 }
 
 .section h2 {
-  font-size:34px;
+  font-size:42px; /* BIG FIX */
   text-align:center;
   color:#facc15;
-  margin-bottom:20px;
+  margin-bottom:18px;
   font-weight:900;
 }
 
 /* CARDS */
 .cards {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:16px;
 }
 
 .card {
   background:#151515;
-  padding:20px;
-  border-radius:10px;
+  padding:18px;
+  border-radius:8px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
 }
 
+/* MENU CARD EMPHASIS */
+.card:first-child {
+  border:2px solid #facc15;
+}
+
 .card h3 {
-  font-size:20px;
+  font-size:18px;
   color:#facc15;
-  margin-bottom:8px;
 }
 
 .price {
   font-size:22px;
   font-weight:900;
-  margin:8px 0;
+  margin:6px 0;
 }
 
 /* BUTTON */
@@ -157,7 +161,7 @@ header {
   display:block;
   width:100%;
   padding:12px;
-  margin-top:12px;
+  margin-top:10px;
   background:#facc15;
   color:#000;
   text-align:center;
@@ -170,7 +174,7 @@ header {
 details {
   margin-top:8px;
   background:#0e0e0e;
-  padding:8px;
+  padding:6px;
   border-radius:6px;
 }
 
@@ -178,18 +182,18 @@ summary {
   cursor:pointer;
   font-weight:900;
   color:#facc15;
-  font-size:14px;
+  font-size:13px;
 }
 
 details ul {
   margin-top:6px;
-  padding-left:18px;
-  font-size:13px;
+  padding-left:16px;
+  font-size:12px;
 }
 
 /* FOOTER */
 footer {
-  padding:25px;
+  padding:20px;
   text-align:center;
   background:#000;
   border-top:1px solid #222;
@@ -206,31 +210,27 @@ footer {
 <div class="slogan">THERE’S LEVELS TO THIS!</div>
 
 <div class="nav-buttons">
-<a href="#money">MAKE MONEY</a>
-<a href="#downloads">DOWNLOADS</a>
-<a href="#packages">PACKAGES</a>
-<a href="#services">A LA CARTE</a>
-<a href="#contact">GET STARTED</a>
+<a href="#">MAKE MONEY</a>
+<a href="#">DOWNLOADS</a>
+<a href="#">PACKAGES</a>
+<a href="#">A LA CARTE</a>
+<a href="#">GET STARTED</a>
 </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <div class="container">
-
 <h2>Build Income → Then Build Your Business</h2>
 <p>Start with cashflow first. Then build your brand and scale.</p>
 
 <div class="hero-actions">
 <a href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">MAKE MONEY NOW</a>
-<a href="#downloads">VIEW DOWNLOADS</a>
+<a href="#">VIEW DOWNLOADS</a>
 </div>
-
 </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
+<section class="section">
 <div class="container">
 
 <h2>A La Carte</h2>
@@ -245,7 +245,6 @@ footer {
 <summary>What You Get</summary>
 <ul>
 <li>Menu layout</li>
-<li>Clean format</li>
 <li>Print + digital</li>
 </ul>
 </details>
@@ -253,7 +252,7 @@ footer {
 <details>
 <summary>Add Food Photography ($49)</summary>
 <ul>
-<li>Plate shots</li>
+<li>Plate photos</li>
 <li>Menu-ready images</li>
 </ul>
 </details>
@@ -261,29 +260,10 @@ footer {
 <a class="btn">Request</a>
 </div>
 
-<div class="card">
-<h3>Business Card</h3>
-<div class="price">$49</div>
-<a class="btn">Order</a>
-</div>
-
-<div class="card">
-<h3>Flyer</h3>
-<div class="price">$99</div>
-<a class="btn">Order</a>
-</div>
-
-<div class="card">
-<h3>Yard Sign</h3>
-<div class="price">$69</div>
-<a class="btn">Order</a>
-</div>
-
-<div class="card">
-<h3>T-Shirt Design</h3>
-<div class="price">$49 / side</div>
-<a class="btn">Order</a>
-</div>
+<div class="card"><h3>Business Card</h3><div class="price">$49</div><a class="btn">Order</a></div>
+<div class="card"><h3>Flyer</h3><div class="price">$99</div><a class="btn">Order</a></div>
+<div class="card"><h3>Yard Sign</h3><div class="price">$69</div><a class="btn">Order</a></div>
+<div class="card"><h3>T-Shirt</h3><div class="price">$49/side</div><a class="btn">Order</a></div>
 
 </div>
 
