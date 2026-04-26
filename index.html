@@ -1,138 +1,637 @@
-<!-- THIS IS YOUR FINAL LIVE SITE FILE -->
-<!-- PASTE INTO index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>THERE’S LEVELS TO THIS!</title>
+<title>THERE’S LEVELS TO THIS! | Business Setup, LLC Structure & Startup System</title>
+
+<meta name="description" content="THERE’S LEVELS TO THIS! helps new and existing businesses with business setup, LLC structure, holding company planning, business credit, funding readiness, grant preparation, vendor accounts, NAICS classification, SAM.gov guidance, branding, website setup, social media footprint, and startup systems.">
+
+<meta name="keywords" content="business setup, LLC setup, LLC structure, holding company, business trust, business credit, business funding, business grants, grant readiness, startup funding, vendor accounts, DUNS number, Dun and Bradstreet, SAM.gov registration, UEI number, NAICS code, federal contracts, government vendor setup, Ohio LLC, Articles of Organization, business bank account, food business setup, restaurant startup, food truck business, corporate identity package, business branding, social media setup, business social media footprint, business online presence, business image and identity, brand identity for business, professional business image, digital brand identity, website setup, business email setup">
 
 <style>
-body{margin:0;background:#0b0b0b;color:#fff;font-family:Arial}
-header{text-align:center;padding:60px;background:#000}
-h1{color:#facc15;font-size:48px}
-.section{padding:60px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;color:#facc15}
-.card{background:#151515;padding:20px;margin:15px;border-radius:10px;border:1px solid #333}
-.btn{background:#facc15;color:#000;padding:14px;display:block;text-align:center;text-decoration:none;margin-top:10px;border-radius:6px}
-.price{font-size:26px;font-weight:bold}
-.note{color:#aaa;font-size:13px}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#0b0b0b;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+header{
+  background:#000;
+  text-align:center;
+  padding:55px 20px 35px;
+  border-bottom:1px solid #222;
+}
+
+.main-title{
+  font-size:64px;
+  font-weight:900;
+  color:#facc15;
+  margin:0;
+  letter-spacing:2px;
+}
+
+.nav-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
+
+.nav-buttons a{
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 20px;
+  border:1px solid #333;
+  border-radius:10px;
+  font-weight:900;
+}
+
+.nav-buttons a:hover{
+  background:#facc15;
+  color:#000;
+}
+
+.container{
+  max-width:1120px;
+  margin:auto;
+  padding:0 30px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#000,#2a1f00);
+  text-align:center;
+  padding:70px 0;
+}
+
+.hero h2{
+  font-size:42px;
+  margin:0 0 15px;
+  font-weight:900;
+}
+
+.hero p{
+  max-width:850px;
+  margin:auto;
+  color:#ddd;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.search-line{
+  margin-top:15px!important;
+  color:#aaa!important;
+  font-size:14px!important;
+}
+
+.section{
+  padding:70px 0;
+}
+
+.section h2{
+  text-align:center;
+  color:#facc15;
+  font-size:44px;
+  margin:0 0 20px;
+  font-weight:900;
+}
+
+.section-intro{
+  max-width:850px;
+  margin:0 auto 35px;
+  text-align:center;
+  color:#ddd;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:#151515;
+  border:1px solid #333;
+  border-radius:16px;
+  padding:26px;
+}
+
+.card h3{
+  color:#facc15;
+  font-size:24px;
+  margin:0 0 10px;
+}
+
+.card p{
+  color:#d4d4d4;
+  line-height:1.5;
+}
+
+.price{
+  font-size:30px;
+  font-weight:900;
+  margin:15px 0;
+}
+
+.value-line{
+  color:#facc15;
+  font-weight:900;
+  margin:0 0 14px;
+  font-size:15px;
+}
+
+.btn{
+  display:block;
+  width:100%;
+  background:#facc15;
+  color:#000;
+  text-align:center;
+  padding:16px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:900;
+  margin-top:15px;
+  border:0;
+  cursor:pointer;
+}
+
+.btn-dark{
+  background:transparent;
+  color:#facc15;
+  border:2px solid #facc15;
+}
+
+details{
+  background:#0e0e0e;
+  border:1px solid #333;
+  border-radius:10px;
+  padding:14px;
+  margin-top:12px;
+}
+
+summary{
+  color:#facc15;
+  font-weight:900;
+  cursor:pointer;
+}
+
+details ul{
+  color:#e5e5e5;
+  line-height:1.6;
+  padding-left:22px;
+}
+
+.accordion{
+  max-width:900px;
+  margin:auto;
+}
+
+.accordion details{
+  margin-bottom:18px;
+}
+
+.service-box{
+  background:#151515;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:22px;
+  margin-top:15px;
+}
+
+.service-box h4{
+  color:#facc15;
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.note{
+  font-size:13px;
+  color:#aaa;
+  margin-top:12px;
+}
+
+.highlight{
+  background:#facc15;
+  color:#000;
+}
+
+.highlight h2,
+.highlight .section-intro{
+  color:#000;
+}
+
+.fee-box,
+.keyword-box{
+  background:#111;
+  border:2px solid #facc15;
+  border-radius:16px;
+  padding:28px;
+  max-width:950px;
+  margin:0 auto 30px;
+}
+
+.keyword-box{
+  border:1px solid #333;
+}
+
+.fee-box h3,
+.keyword-box h3{
+  color:#facc15;
+  font-size:28px;
+  margin:0 0 15px;
+  text-align:center;
+}
+
+.fee-box ul,
+.keyword-box ul{
+  color:#e5e5e5;
+  line-height:1.7;
+}
+
+.fee-box p,
+.keyword-box p{
+  color:#e5e5e5;
+  line-height:1.6;
+  font-size:17px;
+}
+
+.level-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+  margin-top:25px;
+}
+
+.level-card{
+  background:#151515;
+  border:1px solid #333;
+  border-radius:16px;
+  padding:24px;
+}
+
+.level-card h3{
+  color:#facc15;
+  margin-top:0;
+  font-size:24px;
+}
+
+.level-card ul{
+  line-height:1.7;
+  color:#e5e5e5;
+  padding-left:22px;
+}
+
+input{
+  padding:15px;
+  width:90%;
+  max-width:390px;
+  margin:10px;
+  border-radius:8px;
+  border:2px solid #000;
+  font-size:15px;
+}
+
+footer{
+  background:#000;
+  border-top:1px solid #222;
+  text-align:center;
+  color:#888;
+  padding:35px 20px;
+  font-size:13px;
+}
+
+@media(max-width:650px){
+  .main-title{
+    font-size:42px;
+  }
+
+  .hero h2{
+    font-size:30px;
+  }
+
+  .section h2{
+    font-size:32px;
+  }
+
+  .nav-buttons a{
+    width:100%;
+    max-width:330px;
+  }
+}
 </style>
-
 </head>
-
 <body>
 
 <header>
-<h1>THERE’S LEVELS TO THIS!™</h1>
-<p>Business Setup • Structure • Execution</p>
+  <h1 class="main-title">THERE’S LEVELS TO THIS!™</h1>
+
+  <div class="nav-buttons">
+    <a href="#research">MARKET RESEARCH</a>
+    <a href="#structure">STRUCTURE</a>
+    <a href="#risk">RISK</a>
+    <a href="#officialfees">OFFICIAL FEES</a>
+    <a href="#packages">PACKAGES</a>
+    <a href="#social">SOCIAL MEDIA</a>
+    <a href="#credit">BUSINESS CREDIT</a>
+    <a href="#checklist">CHECKLIST</a>
+    <a href="#alacarte">A LA CARTE</a>
+  </div>
 </header>
 
-<!-- MARKET RESEARCH -->
-<section class="section">
-<h2>Market Research That Pays You</h2>
-<p>DoorDashing allows you to learn your market while getting paid.</p>
-<a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/">START DASHING</a>
+<section class="hero">
+  <div class="container">
+
+    <h2>Business Setup. Structure. Execution.</h2>
+
+    <p>
+      THERE’S LEVELS TO THIS! helps new and existing businesses with business setup,
+      LLC structure, holding company planning, business credit, funding readiness,
+      grant preparation, vendor accounts, NAICS classification, SAM positioning,
+      branding, website setup, and building a strong social media footprint from day one.
+    </p>
+
+    <p class="search-line">
+      Business setup • LLC structure • business credit • funding readiness • grants • branding • social media identity
+    </p>
+
+    <a class="btn" style="max-width:340px;margin:25px auto 0" href="#packages">
+      START YOUR SETUP
+    </a>
+
+  </div>
 </section>
 
-<!-- STRUCTURE -->
-<section class="section">
-<h2>Business Structure — What’s At Risk</h2>
+<!-- ========================= -->
+<!-- MARKET RESEARCH SECTION -->
+<!-- ========================= -->
 
-<div class="card">
-<h3>Sole Proprietor (SSN)</h3>
-<ul>
-<li>Your bank account at risk</li>
-<li>Your car at risk</li>
-<li>Your home at risk</li>
-<li>Your income tied directly</li>
-</ul>
-</div>
+<section class="section" id="research">
+  <div class="container">
 
-<div class="card">
-<h3>LLC (EIN)</h3>
-<p>Get EIN from IRS.gov</p>
-<ul>
-<li>Separates business from personal</li>
-<li>Required for banking</li>
-<li>Used for business credit</li>
-</ul>
-</div>
+    <h2>Market Research That Pays You</h2>
 
-<div class="card">
-<h3>Trust → Holding → Business</h3>
-<ul>
-<li>Operating LLC runs business</li>
-<li>Holding LLC owns it</li>
-<li>Trust owns holding</li>
-</ul>
-<p><strong>Generational Wealth Protection</strong></p>
-</div>
+    <p class="section-intro">
+      Before you start your business, don’t guess where customers are.
+      Use DoorDash as a real-time market research system while getting paid.
+      You learn demand, pricing, locations, and customer behavior before spending your own money.
+    </p>
 
+    <div class="cards">
+
+      <div class="card">
+        <h3>Scout High Demand Areas</h3>
+        <p>
+          Drive through active zones, learn which locations stay busy,
+          and identify where customers are actually ordering from.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Study Competitors</h3>
+        <p>
+          See wait times, order volume, pricing, and which restaurants consistently get orders.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Understand Customer Behavior</h3>
+        <p>
+          Learn what people order, when they order, and which areas tip better.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Start Earning While Learning</h3>
+        <div class="price">Free</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Immediate earning opportunity</li>
+            <li>Real-time market research</li>
+            <li>Learn high-demand zones</li>
+            <li>Understand peak hours</li>
+            <li>Study competitor performance</li>
+          </ul>
+        </details>
+
+        <a class="btn" href="https://drd.sh/HhjbTNPihPOCLT2H/" target="_blank">
+          START DASHING NOW
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>DoorDash Cheat Codes</h3>
+        <div class="price">$9.99</div>
+
+        <details>
+          <summary>What You Get</summary>
+          <ul>
+            <li>Best zones strategy</li>
+            <li>Best times to work</li>
+            <li>Order selection rules</li>
+            <li>How to maximize $ per mile</li>
+            <li>Stacking strategy</li>
+            <li>Route optimization method</li>
+          </ul>
+        </details>
+
+        <a class="btn btn-dark" href="#">
+          DOWNLOAD GUIDE
+        </a>
+      </div>
+
+    </div>
+  </div>
 </section>
+  <!-- ========================= -->
+<!-- STRUCTURE + RISK SECTION -->
+<!-- ========================= -->
 
-<!-- PACKAGES -->
-<section class="section">
-<h2>Packages</h2>
+<section class="section" id="structure">
+  <div class="container">
 
-<div class="card">
-<h3>LLC Blueprint</h3>
-<div class="price">$29.99</div>
-<p class="note">State fees not included</p>
-<a class="btn">REQUEST</a>
-</div>
+    <h2>Business Structure — What’s At Risk vs What’s Protected</h2>
 
-<div class="card">
-<h3>Structure w/ Trust</h3>
-<div class="price">$99</div>
-<a class="btn">REQUEST</a>
-</div>
+    <p class="section-intro">
+      Most people start a business without understanding what is actually at risk.
+      The way your business is structured determines your level of exposure,
+      protection, and long-term opportunity.
+    </p>
 
-<div class="card">
-<h3>Package D</h3>
-<div class="price">$499</div>
-<p>Full setup + maintenance</p>
-<a class="btn">REQUEST</a>
-</div>
+    <div class="level-grid">
 
+      <!-- SOLE PROPRIETOR -->
+      <div class="level-card">
+        <h3>Sole Proprietor — No Structure</h3>
+
+        <p>
+          As a sole proprietor, you and your business are legally the same.
+        </p>
+
+        <h4>Using Your SSN</h4>
+
+        <p>
+          Your business operates under your personal Social Security Number (SSN).
+          There is no separation between you and your business activity.
+        </p>
+
+        <ul>
+          <li>Your personal bank account can be affected</li>
+          <li>Your car can be affected</li>
+          <li>Your home may be at risk depending on the situation</li>
+          <li>Your income is directly tied to business activity</li>
+          <li>Business debt can follow you personally</li>
+        </ul>
+
+        <p class="note">
+          There is no legal separation between you and your business.
+        </p>
+      </div>
+
+      <!-- LLC -->
+      <div class="level-card">
+        <h3>LLC — Limited Liability Company</h3>
+
+        <p>
+          An LLC creates separation between you and your business—but only if it is operated correctly.
+        </p>
+
+        <h4>Get Your EIN</h4>
+
+        <p>
+          After forming your LLC, you must obtain an EIN (Employer Identification Number)
+          from the IRS by going to IRS.gov and applying directly.
+        </p>
+
+        <ul>
+          <li>Replaces your SSN for business use</li>
+          <li>Required to open a business bank account</li>
+          <li>Used for business credit</li>
+          <li>Keeps your personal identity separate</li>
+        </ul>
+
+        <h4>What Can Still Go Wrong</h4>
+
+        <ul>
+          <li>Mixing personal and business money</li>
+          <li>Personally guaranteeing loans</li>
+          <li>Poor recordkeeping</li>
+          <li>Not operating like a real business</li>
+        </ul>
+
+        <p class="note">
+          If handled incorrectly, the protection can break down.
+        </p>
+      </div>
+
+      <!-- TRUST STRUCTURE -->
+      <div class="level-card">
+        <h3>Trust + Holding Structure</h3>
+
+        <p>
+          This structure separates ownership, control, and operations into layers.
+        </p>
+
+        <h4>How It Works</h4>
+
+        <ul>
+          <li><strong>Operating LLC:</strong> runs the business</li>
+          <li><strong>Holding Company:</strong> owns the business</li>
+          <li><strong>Trust:</strong> owns the holding company</li>
+        </ul>
+
+        <p><strong>Final Structure:</strong></p>
+
+        <p>
+          Trust → Holding Company → Operating Business
+        </p>
+
+        <h4>What This Does</h4>
+
+        <ul>
+          <li>Separates ownership from operations</li>
+          <li>Creates structure for multiple businesses</li>
+          <li>Organizes assets more strategically</li>
+        </ul>
+
+        <h4>Generational Wealth Protection</h4>
+
+        <p>
+          This setup helps organize ownership beyond one person and supports long-term control.
+        </p>
+
+        <ul>
+          <li>Keeps ownership structured across generations</li>
+          <li>Supports long-term asset organization</li>
+          <li>Creates a system for succession planning</li>
+          <li>Separates ownership from daily operations</li>
+        </ul>
+
+        <p class="note">
+          This structure does not eliminate risk or taxes automatically.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- TAX POSITIONING -->
+    <div class="keyword-box" style="margin-top:40px;">
+
+      <h3>Business Expenses & Tax Positioning</h3>
+
+      <p>
+        When your business is structured and operated correctly, certain expenses
+        used for business purposes may be treated as business expenses.
+      </p>
+
+      <ul>
+        <li>Business-use portion of a vehicle (car, truck, trailer)</li>
+        <li>Equipment and tools</li>
+        <li>Office-related expenses</li>
+        <li>Marketing and branding</li>
+        <li>Website and digital tools</li>
+      </ul>
+
+      <p>
+        Proper structure allows you to track and manage expenses
+        which may reduce taxable business income.
+      </p>
+
+      <p class="note">
+        Expenses must be ordinary, necessary, and used for business purposes.
+        Personal expenses do not automatically qualify.
+      </p>
+
+      <p>
+        <strong>
+          The level of structure you choose determines how exposed or protected your business and personal life may be.
+        </strong>
+      </p>
+
+    </div>
+
+  </div>
 </section>
-
-<!-- PAYMENT -->
-<section class="section">
-<h2>Secure Payment</h2>
-<p>Invoices are sent via Square or Stripe.</p>
-</section>
-
-<!-- CHECKLIST -->
-<section class="section">
-<h2>Checklist</h2>
-<ul>
-<li>☐ Name checked</li>
-<li>☐ LLC filed</li>
-<li>☐ EIN obtained</li>
-<li>☐ Bank opened</li>
-</ul>
-</section>
-
-<!-- FORM -->
-<section class="section">
-<h2>Request Your Setup</h2>
-
-<form action="https://formspree.io/f/mlgazagn" method="POST">
-<input type="email" name="email" placeholder="Email" required>
-<br><br>
-<input type="text" name="interest" placeholder="What do you need">
-<br><br>
-<button class="btn">SEND</button>
-</form>
-
-</section>
-
-<footer style="text-align:center;padding:20px;background:#000">
-<p>© 2026 THERE’S LEVELS TO THIS!™</p>
+  <footer>
+  <p>Payments processed via Square or Stripe</p>
+  <p>© 2026 — THERE’S LEVELS TO THIS!™</p>
 </footer>
 
 </body>
 </html>
+ 
